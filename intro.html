@@ -1,21 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - Introduction aux balises</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Balisage de texte</h1>
 
-    <h2>Carte d'identité</h2>
-    
+<body>
+    <h1>Découvrir les balises HTML</h1>
+
+    <h3 id="top">Sommaire</h3>
+
+    <ul>
+        <li><a href="#balisedetexte">Balisage de texte</a></li>
+
+        <li><a href="#listes">Les listes</a>
+            <ul>
+                <li><a href="#listespuces">Les listes à puces</a></li>
+                <li><a href="#listesnumeros">Les listes numérotées</a></li>
+                <li><a href="#listesimbriquees">Les listes imbriquées</a></li>
+                <li><a href="#listesdefinitions">Les listes de définition</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#lienshypertextes">Les liens hypertextes</a>
+            <ul>
+                <li><a href="#liensexternes">Les liens externes</a></li>
+                <li><a href="#liensinternes">Les liens internes</a></li>
+                <li><a href="#liensversfichiers">Les liens vers des fichiers</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#images">Les images</a></li>
+
+    </ul>
+    <h1 id="balisedetexte">Balisage de texte<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h1>
+
+    <h2>Carte d'identité<a href="#top"><img src="images/fleche.png" alt="icone pour remonter sommaire"></a></h2>
+
     <p>Nom : <strong>Malo</strong></p>
     <p>Prénom : <em>Mathias</em></p>
     <p>Mail : <i>mathias.malo@ifosup.wavre.be</i></p>
 
+    <h3 id="listes">Les listes<a href="#top"><img src="images/fleche.png" alt="icone pour remonter sommaire"></a></h3>
 
+    <h3 id="listespuces">Les listes à puces<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h3>
+    <ul>
+        <li>oui</li>
+        <li>non</li>
+        <li>uno</li>
+    </ul>
 
-    <!-- Cours du prof :  https://www.nathalievanassche.be/#noscours-->
+    <h3 id="listesnumeros">Les listes numérotées<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h3>
+    <ol>
+        <li>oui</li>
+        <li>non</li>
+        <li>uno</li>
+    </ol>
+
+    <h3 id="listesimbriquees">Les listes imbriquées<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h3>
+    <ul>
+        <li>Liste principal
+            <ul>
+                <li>oui</li>
+                <li>non</li>
+                <li>uno</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3 id="listesdefinitions">Les listes de définition<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h3>
+    <dl>
+        <dt>Counter strike</dt>
+        <dd>c'est un jeu competitif</dd>
+    </dl>
+
+    <h2 id="lienshypertextes">Les liens hypertextes<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h2>
+
+    <h3 id="liensexternes">Les liens externes<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h3>
+    <p>
+        <a href="https://www.google.be" title="Vers le moteur de recherche google" target="_blank">lien google</a>
+    </p>
+
+    <h3 id="liensinternes">Les liens internes<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h3>
+
+    <a href="exercice article/article2.html">renvoie vers exercice article car c'est interne</a>
+
+    <h3 id="liensversfichiers">Les liens vers des fichiers<a href="#top"><img src="images/fleche.png"
+                alt="icone pour remonter sommaire"></a></h3>
+    <p>
+        <a href="fichiers/dossier.pdf" title="rapport complet" target="_blank">Cliquez pour ouvrir fichier
+            pdf</a>
+    </p>
+    <p>
+        <a href="fichiers/dossier copy.pdf" title="rapport complet" target="_blank">Cliquez pour ouvrir fichier
+            pdf</a>
+    </p>
+
+    <!-- target permet d'ouvrir un lien pdf dans un nouvelle onglet-->
+    <p>
+        <a href="fichiers/graphique.xlsx" title="graphique">Consulter les chiffres sous forme de graph
+        </a>
+    </p>
+
+    <h2 id="images">Les images<a href="#top"><img src="images/fleche.png" alt="icone pour remonter sommaire"></a>
+    </h2>
+
+    <h3>Inserer des images<a href="#top"><img src="images/fleche.png" alt="icone pour remonter sommaire"></a></h3>
+
+    <figure>
+        <img src="images/faker.jpg" alt="faker" title="FAKEEEEEEEEEER" width="300" height="300">
+    </figure>
+
+    <figure>
+        <img src="images/gumas-haircut-v0-kgruek8kkpxd1.webp" alt="GUMAAAAAAAAAAA" title="GUMAAAAAAA" width="300"
+            height="300">
+    </figure>
+
+    <figure>
+        <img src="images/i1700227486891327.jpeg" alt="T1 ET NEWJEANS" title="t1 et NEWJEANS" width="300" height="300">
+    </figure>
+
+    <figure>
+        <img src="images/Best-Things-To-Do-In-Seoul-South-Korea-9.jpg" alt="Photo de Séoul" title="Seoul" width="300"
+            height="300">
+    </figure>
+
+    <h3>Image cliquable<a href="#top"><img src="images/fleche.png" alt="icone pour remonter sommaire"></a></h3>
+
+    <a href="https://www.google.be" title="Vers le moteur de recherche google" target="_blank"><img
+            src="images/imageexterne.png" alt="" title=""></a>
+
 </body>
+
 </html>
+<!--- Cours du prof :  https://www.nathalievanassche.be/#noscours-->

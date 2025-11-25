@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Exemple</title>
+</head>
+
+<body>
+    <h1>Abonnement à la Newsletter</h1>
+    <fieldset>
+        <legend>Coordonnées</legend>
+        <form>
+            <p>
+                <label for="nom" class="obligatoire">Nom : </label>
+                <input type="text" id="nom" name="nom" placeholder="Champ obligatoire" required />
+            </p>
+
+            <p>
+                <label for="prenom">Prénom : </label>
+                <input type="text" id="prenom" name="prenom">
+            </p>
+
+            <p>
+                <label for="email" class="obligatoire">e-Mail :</label>
+                <input type="email" id="email" name="email" placeholder="Champ obligatoire" required>
+                <img src="/images/blue-information-icon-design-user-interface-design-vector-illustration-365675801.png"
+                    alt="Email pas utliser pour fin commercials"
+                    title="Votre addresse e-mail ne sera pas utlisée à des fins commerciales" />
+            </p>
+            <p>
+                <label for="pays">Pays :</label>
+                <select name="pays" id="pays">
+                    <optgroup label="Europe">
+                        <option value="france">France</option>
+                        <option value="belgique" selected="selected">Belgique</option>
+                    </optgroup>
+                    <optgroup label="Amerique du Nord ">
+                        <option value="canada">Canada</option>
+                        <option value="etatsunis">Etat-Unis</option>
+                    </optgroup>
+                    <optgroup label="Asie">
+                        <option value="japon">Japon</option>
+                        <option value="chine">Chine</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="naissance">Date de naissance :</label>
+                <input type="date" id="naissance" name="naissance">
+            </p>
+    </fieldset>
+    <br />
+
+    <p>
+    <fieldset>
+        <legend>Options</legend>
+        <input type="radio" name="periode" id="periodeH" value="hebdo" checked="checked" />
+        <label for="periodeH">Newsletter hebdomadaire </label>
+        <br />
+
+        <input type="radio" name="periode" id="periodeM" value="mens" />
+        <label for="periodeM">Newsletter mensuelle </label>
+        <br />
+
+        <input type="radio" name="periode" id="periodeT" value="trim" />
+        <label for="periodeT">Newsletter trimestrielle </label>
+        </p>
+    </fieldset>
+    <br>
+
+    <p>
+        <input type="submit" name="valid" id="valid" value="Je m'abonne" />
+        </form>
+</body>
+
+</html>

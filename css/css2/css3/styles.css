@@ -1,0 +1,19 @@
+body {
+    background-color: palegreen;
+    font-size: 1em;
+}
+
+em {
+    color: aqua;
+    font-size: 25px;
+}
+
+strong {
+    margin-left: 25%;
+    color: blue;
+}
+p{
+    font-family: Tahoma;
+    margin-top: 0.3em;
+    text-align: right;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="">
+        <h1>Formulaire de demande de contact</h1>
+        <p>
+            <label for="nom" class="obligatoire">Nom : </label>
+            <input type="text" id="nom" name="nom" placeholder="Champ obligatoire" required />
+        </p>
+        <br>
+
+        <p>
+            <label for="email" class="obligatoire">e-Mail :</label>
+            <input type="email" id="email" name="email" placeholder="Champ obligatoire" required>
+        </p>
+        <br>
+
+        <p>
+            <label for="type">Type de demande </label>
+            <select name="type" id="type" required>
+                <option value="question">Question</option>
+                <option value="problemetechnique">Problème technique</option>
+                <option value="reclamation">Réclamation</option>
+                <option value="autre">Autre</option>
+            </select>
+        </p>
+        <br>
+
+        <p>
+            <label for="message">Message détaillé</label>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        </p>
+        <br>
+
+        <p>
+            <input type="checkbox" id="accepte" name="accepte" required>
+            <label for="accepte">
+                J'accepte que mes données soient utilisées pour traiter ma demande.
+            </label>
+        </p>
+        
+
+        <p>
+            <input type="submit" value="Envoyer">
+        </p>
+    </form>
+</body>
+
+</html>
