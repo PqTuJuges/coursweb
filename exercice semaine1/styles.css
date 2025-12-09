@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: yellow;
+    border-bottom: 5px solid yellow;
+    margin-left: 2%;
+    padding-bottom: 1.5em;
+    letter-spacing: 0.2em;
+}
+img{
+    border: 2px solid yellow;
+}
+strong{
+    color: yellow;
+}
+em{
+    color: yellow;
+}
+body{
+    background-color: gray;
+
+}
+p{
+    text-align: justify;
+    margin-left: 2%;
+}
+h2{
+    margin-left: 2%;
+}
+.ny{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
