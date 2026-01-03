@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&family=Sekuya&family=Tiny5&display=swap');
+.letexte{
+    padding: 2em;
+    background-color: gray;
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+    line-height: 1.2em;
+    min-width: 680px;
+    font-family: "Tiny5", sans-serif;
+}
+h1{
+    color: red;
+    margin-left: 2.5em;
+    font-family: "Science Gothic", sans-serif;
+}
+nav {
+	background-color: black;
+	padding: 5px ;
+}
+ul {
+	list-style: none;
+	display: flex;
+    margin-left: 15em;
+    gap: 30px;
+}
+a {
+	color: white;
+	font-weight: bold;
+}
+h2{
+    margin-left: 1.5em;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}

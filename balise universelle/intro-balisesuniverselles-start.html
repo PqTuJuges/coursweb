@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+	<title>Les balises universelles</title>
+
+<style>
+
+body {
+	font: 100%/1.5 "Myriad Pro","Myriad Web","Lucida Grande","Trebuchet MS","Tahoma","Helvetica","Arial",sans-serif;
+	color: #434343;
+	margin:10px;
+	}
+h1  {
+	color:darkgray;
+    }
+h2  {
+	border-bottom-style:dashed;
+	border-color:darkgray;
+	border-width:1px;
+    }
+
+ul{
+	width:350px;
+}
+.maclasse{
+	color: green;
+	font-size: 2em;
+}
+.oui{
+	color: red;
+	font-weight: bolder;
+}
+.vin1{
+	background-color: aqua;
+}
+div.blocVinBlanc{
+	border: 2px  solid green;
+	margin: 1em;
+	padding: 1em;
+}
+.blocVinRouge{
+	margin: 1em;
+	padding: 1em;
+	border: 2px solid red;
+}
+#monid{
+	background-color: gray;
+
+}
+#bloc01{
+	background-color: red;
+	border: 3px solid black;
+	border-radius: 0.3em;
+	padding: 1em;
+	margin: 1em;
+	list-style-position: inside;
+}
+#bloc02{
+	background-color: green;
+	border: 3px solid black;
+	border-radius: 0.3em;
+	padding: 1em;
+	margin: 1em;
+	list-style-position: inside;
+	
+}
+div#bloc01 li {
+	color: yellow;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<h1> Comprendre les balises universelles </h1>
+
+<h2> La balise span </h2>
+<p>
+encadre, <span> sans générer de saut à la ligne</span>, >> balise en ligne  
+</p>
+
+<h2> La balise div </h2>
+<div> 
+Encadre plusieurs "blocs", éléments (paragraphes, titres, tableaux, ...). <div>Elle est de type bloc, </div> après sa fermeture, ce qui suit passe à la ligne.
+</div>
+<div> 
+encadre, en générant un saut à la ligne, >> balise en bloc ...
+</div>
+
+<h2> Les classes </h2>
+<p>
+Permettent de donner un nom à une ensemble de mises en forme et sera indiquée dans votre code CSS précédée d'un "." exemple : .nomdemaclasse
+</p>
+<br><br><br><br><br><br><br><br><br>
+
+
+
+<h2>Exemples concrets</h2>
+
+<h3>Les classes, introduction</h3>
+
+<p>
+Praesent lacinia, <strong class="maclasse">ex eget volutpat porttitor</strong>, lacus justo vestibulum turpis, vel consectetur magna orci sit amet erat. Cras <strong>ultrices fringilla mattis</strong>. Nam eu dui ultricies, efficitur odio id, sollicitudin erat. Etiam tincidunt metus eu nisl interdum, <em class="maclasse">at pulvinar massa lobortis</em>. Donec aliquet urna diam, eget efficitur arcu imperdiet luctus. Etiam feugiat congue est, nec maximus magna tristique quis. Morbi <strong>vitae porttitor urna</strong>. Suspendisse aliquet ultricies efficitur. Curabitur id lectus a eros tincidunt tristique eu sit amet ex. Ut egestas nulla pretium, tincidunt nibh in, iaculis quam. Nunc sollicitudin, sapien ut tincidunt convallis, neque quam elementum nulla, <strong>ac tincidunt magna dolor vitae risus</strong>. Cras fringilla et sapien ac euismod. Donec ullamcorper elementum vestibulum.
+</p>
+
+
+<h3> Exemple 01 </h3>
+
+<p>Tôt couché et tôt levé <span class="oui">fortifie, enrichit et rend avisé</span>
+</p>
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+<h3> Exemple 02 </h3>
+
+<p>Cépages de vins blancs :</p>
+	<ul>
+	<li><span class="vin1">Riesling</span></li>
+	<li >Chardonnay</li>
+	<li>Pinot Blanc</li>
+	</ul>
+<p>Cépages de vins rouges :</p>
+	<ul>
+	<li ><span class="vin1">Cabernet Sauvignon</span></li>
+	<li>Merlot</li>
+	<li>Pinot Noir</li>
+	</ul>
+
+	
+	
+	
+<br><br><br><br><br><br><br><br><br>
+
+
+
+
+<h3> Exemple 03 </h3>
+	<div class="blocVinBlanc">
+	<p>Cépages de vins blancs :</p>
+		<ul>
+		<li>Riesling</li>
+		<li>Chardonnay</li>
+		<li>Pinot Blanc</li>
+		</ul>
+</div>
+	
+<div class="blocVinRouge">
+	<p>Cépages de vins rouges :</p>
+	<ul>
+	<li>Cabernet Sauvignon</li>
+	<li>Merlot</li>
+	<li>Pinot Noir</li>
+	</ul>
+</div>
+
+
+
+<h2> Les id </h2>
+<div id="monid">
+<p>
+Permettent de donner un nom à une ensemble de mises en forme et sera indiquée dans votre code CSS précédée d'un "#" exemple : #nomdemonid</p>  
+<p>Par convention, on réserve les ID pour les éléments structurels car on ne peux les employer qu'une seule fois par page
+</p>
+</div>
+
+
+
+
+
+
+<h3> Exemple </h3>
+
+<ul>
+<div id="bloc01">
+	<li> Elément 1 </li>
+	<li> Elément 2 </li>
+	<li> Elément 3 </li>
+	<li> Elément 4 </li>
+	<li> Elément 5 </li>
+</div>
+<div id="bloc02">
+	<li> Elément 6 </li>
+	<li> Elément 7 </li>
+	<li> Elément 8 </li>
+	<li> Elément 9 </li>
+	<li> Elément 10 </li>
+</div>	
+</ul>
+
+</body>
+</html>
+
+
+
+
+
+
+

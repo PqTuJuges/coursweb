@@ -1,0 +1,53 @@
+body {
+    background-color: greenyellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+    border-bottom: 5px solid orange;
+}
+
+h2 {
+    border-left: 2em double red;
+    border-right: 2em double red;
+    letter-spacing: 1em;
+    text-align: center;
+}
+
+p {
+
+    text-indent: 10%;
+    padding: 10px;
+    text-align: justify;
+    margin-left: 4em;
+    border-left: 1em solid black;
+    
+}
+
+ul {
+    list-style: none;
+    border: dashed;
+    background-color: white;
+    width: 75%;
+    margin: auto;
+}
+
+.paragraphespe {
+    background-color: red;
+    width: 12%;
+    font-size: 2em;
+    padding: 50px;
+    text-indent: 0%;
+    margin-left: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    border-left: 1em solid black;
+}
+
+/*1 em pour la taille de la police et respectera le choix des utilisateurs
+
+police carractere tj en 1em 
+
+
+*/
