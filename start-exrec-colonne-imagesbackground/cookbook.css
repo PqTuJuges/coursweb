@@ -1,0 +1,30 @@
+body{
+    background-image: url(html.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+h1 {
+    color: brown;
+    text-shadow: 1px 1px 2px;
+}
+
+h2 {
+    color: burlywood;
+}
+
+.aaaa {
+    color: burlywood;
+}
+
+.colonne02 {
+    column-width: 200px;
+    /*width, style et color */
+    column-rule: 3px solid green;
+    text-align: justify;
+    column-gap: 30px;
+}
+img {
+  float: right; /* L'image flotte à droite */
+  margin-left: 20px; /* Optionnel : ajoute une marge pour décoller le texte */
+}

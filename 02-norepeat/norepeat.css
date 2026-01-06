@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&family=Sekuya&family=Tiny5&display=swap');
+body{
+    background-color: #cfdee1;
+}
+div {
+    background-image: url(pat_feuille.jpg);
+    background-repeat: no-repeat;
+    
+
+
+    font-family: "Science Gothic", sans-serif;
+    text-align: center;
+    box-shadow: 1px 1px;
+    margin: auto;
+    width: 25%;
+    height: 100vh;
+
+    padding: 1em;
+}

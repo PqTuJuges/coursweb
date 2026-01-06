@@ -1,0 +1,29 @@
+.colonne01{
+    /*column-count: 4; */
+    column-width: 200px;
+    /*width, style et color */
+    column-rule: 3px solid green;
+    text-align: justify;
+    column-gap: 30px;
+}
+.oui{
+    column-width: 200px;
+    column-rule: 3px solid gray;
+    text-align: justify;
+    column-gap: 30px;
+    
+}
+.oui h2{
+    background-color: blueviolet;
+    column-span: all;
+    break-before: column;
+}
+.colonne4{
+    column-width: 200px;
+    column-gap: 30px;
+    background-color: silver;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: justify;
+    
+}

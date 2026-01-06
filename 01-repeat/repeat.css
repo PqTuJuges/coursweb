@@ -1,0 +1,12 @@
+#panneau{
+    background-image: url("patchwork.gif");
+    border: 2px solid blueviolet;
+    height: 250px;
+    width: 25%;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+body{
+    background-color: cyan;
+}
