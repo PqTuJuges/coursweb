@@ -1,0 +1,16 @@
+body{
+    background-image: url(herbes.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    
+    
+}
+p{  
+    margin-bottom: 20%;
+}
+.contenu {
+    margin-left: 150px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid black;
+}

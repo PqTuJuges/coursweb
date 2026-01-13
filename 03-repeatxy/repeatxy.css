@@ -1,0 +1,11 @@
+body{
+    background-image: url(pat_fleur.jpg);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+p{
+    margin-bottom: 400px;
+    color: orange;
+}

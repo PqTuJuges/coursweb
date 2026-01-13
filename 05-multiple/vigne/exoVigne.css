@@ -1,0 +1,11 @@
+body{
+    background-image: url(bordure-vigne-haut-g.png), url(bordure-vigne-haut-d.png), url(bordure-vigne-bas-g.png), url(bordure-vigne-bas-d.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, left bottom, right bottom;
+    padding: 10%;
+    min-width: 850px;
+    margin: auto;
+    text-align: justify;
+    color: green;
+    border: 2px solid green;
+}

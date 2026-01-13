@@ -2,10 +2,16 @@ body{
     background-image: url(html.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top;
+    background-position: 50% 0; /*center top*/
+    margin: 0 auto;
+    width: 98%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    min-width: 640px;
 }
 h1 {
     color: brown;
+    text-transform: uppercase;
     text-shadow: 1px 1px 2px;
 }
 
@@ -26,5 +32,5 @@ h2 {
 }
 img {
   float: right; /* L'image flotte à droite */
-  margin-left: 20px; /* Optionnel : ajoute une marge pour décoller le texte */
+  margin-left: 20px; /* ajoute une marge pour décoller le texte */
 }

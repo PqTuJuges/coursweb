@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    background-image: url("texas.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 15px 30px;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover,.navbar a:focus {
+    color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+}

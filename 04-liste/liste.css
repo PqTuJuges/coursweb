@@ -1,0 +1,11 @@
+.liste1 li{
+    list-style-image: url(tick.png);
+}
+.liste2 li{
+    list-style-image: url(puceorange.gif);
+    
+
+}
+.liste2 li:hover, .liste2 li:focus{
+    list-style-image: url(puceverte.gif);
+}
