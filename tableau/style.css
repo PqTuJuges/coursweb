@@ -1,0 +1,31 @@
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+}
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead{
+  background-color:aqua;
+}
+
+th,td {
+  padding: 8px 10px;
+}
+td,tfoot{
+    background-color: aquamarine;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+tbody tr:hover td{
+    background-color: wheat;
+}
