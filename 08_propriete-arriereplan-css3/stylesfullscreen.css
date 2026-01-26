@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+* {  /*margin:0;
+    padding:0;*/
+	}
+
+html{
+
+  background-image:url(texas.jpg);
+  background-repeat:no-repeat;
+  background-position:center top;
+  background-attachment:fixed;
+  /*   background: url(texas.jpg) no-repeat center fixed;  */
+  background-size: cover; 
+	/*
+CSS3 propose deux mots-clé pour la propriété background-size : cover et contain.  Ces valeurs permettent de couvrir des surfaces tout en conservant le ratio de l’image de fond.
+"cover" : forcera à couvrir toute la surface sans déformer l'image. Quitte à la rogner.
+"contain" : forcera l'image à ne pas dépasser de l'élément sans la déformer.
+	*/
+ 
+
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+h1{
+	font-family: 'Beth Ellen', cursive;
+	font-size:8em;
+	text-align:center;
+	color:white;
+}
+
+nav {
+
+
+	font-size:1.6em;
+	font-weight:lighter;
+	padding:1em;
+
+	background-color: rgba(0,0,0,0.4);
+
+	margin:0;
+}
+
+nav ul {
+	list-style-type:none;
+}
+
+nav ul li{
+	display:inline-block;
+	margin-left:3em;
+	color:white;
+	font-family: 'Beth Ellen', cursive;
+}
+
+
+
+

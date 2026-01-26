@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+	<head>
+<title>Bordure Image</title>
+
+<style type="text/css">
+
+
+
+body{
+	padding: 5px 20px;
+	background: #fff;
+	color: #000;
+	font: 120%/1.4 Georgia, "Times new roman", Verdana, serif;
+}
+
+.border_image {
+	background-color: silver;
+	border: 35px solid #897048; /* obligatoire pour appliquer une border-image*/
+	margin: 50px;
+	padding: 10px;
+	width: 310px;
+	
+	
+	border-image:url(image_pour_bordure.png) 35 stretch;
+	
+	/*
+	On spécifie l'image à utiliser
+	On définit la largeur de la bordure
+	On définit la distance de découpe des bords de l'image, ici on coupe à 35px tout autour (on pourrait énoncer 0 30 0 30 /H D B G)
+	On définit le mode d'étirement de la partie centrale: Etiré (stretch), ou répété (round).
+	*/
+}
+
+.border_image02 {
+	background-color: #B43104;
+	border: 15px solid #897048;
+	margin: 50px;
+	padding: 10px;
+	width: 310px;
+	border-radius: 5px;
+	
+	border-image:url(image_pour_bordure.png) 27 round;
+}
+
+.border_image03 {
+	margin: 50px;
+    border: solid orange 27px;
+    border-image-source: url(image_pour_bordure.png);
+    border-image-slice: 27;
+	/* L'image fait 81 px sur 81 px, et est donc découpée en 9 carrés de 27 px de côté*/
+	border-image-width: 27px;
+	border-image-outset: 20px;
+	/*Un espace entre la bordure et le texte a été créé.*/
+	border-image-repeat:strech;
+	/*L'image est étirée aux coins de l'élément.*/
+	
+	
+	/*
+	Cet exemple est détaillé ici : http://letrainde13h37.fr/11/decouverte-de-la-propriete-css-border-image/
+	Plus d'infos sur border-image : http://www.pompage.net/traduction/la-propriete-border-image-en-css3
+	*/
+}
+
+</style>
+
+</head>
+<body>
+
+
+<h2>Les bordures à images</h2>
+
+<p class="border_image">
+Ceci est un exemple de boîte avec une image comme bordure.
+</p>
+
+
+
+<p class="border_image02">
+Ceci est un exemple de boîte avec une image comme bordure.
+</p>
+
+<p class="border_image03">
+Ceci est un exemple de boîte avec une image comme bordure.
+</p>
+
+<p> Générateur de border-image : <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Arri%C3%A8re-plans_et_bordures_CSS/G%C3%A9n%C3%A9rateur_border-image">Générateur de border-image</a></p>
+
+
+
+
+</body></html>

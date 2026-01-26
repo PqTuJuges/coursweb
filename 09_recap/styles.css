@@ -1,0 +1,46 @@
+
+body{
+
+	background-image:url(images/nature-background.jpg); 
+	background-repeat:no-repeat; 
+	background-attachment:fixed;
+	background-position:center; 
+  background-size:cover; 
+/*   La propriété CSS background-size:cover forcera à couvrir toute la surface sans déformer l'image (quitte à la rogner) >> Toutes les propriétés en lignes de 4 à 8 sont indispensables pour couvrir le fond de la page*/
+  margin-top:5%;
+  font-family:'Marvel', sans-serif;
+		}
+
+main {
+	background-image: 
+		url(images/bg-mid_haut.png),
+		url(images/bg-mid_bas.png),
+		url(images/logo_transparent.png);
+	background-repeat: 
+		repeat-x, 
+		repeat-x,
+		/* répétition horizontale des herbes > adaptation de cette image de fond quelle que soit la largeur de l'écran */
+		no-repeat; 
+	background-position: 
+		top center, 
+		bottom center,
+		bottom 110px right 10px;
+		/* Propriété CSS3 permettant de décaler une image d’arrière-plan de 110px du bas et de 10px à partir de la droite de la boîte, par défaut, ce décalage s’effectue par rapport au coin supérieur gauche. */
+	color: #89ac11;
+	border:1px solid #89ac11;
+	padding: 100px 20px; /* 100px en haut et en bas et 20px à gauche et à droite */
+	
+	width:80%;
+	max-width:1200px; 	/* Pour ne pas aller au delà de cette largeur > intérêt graphique*/
+	margin:10px auto; /* Marges de 10 px au dessus et en dessous et automatique à gauche et à droite ce qui donne le centrage horizontal */
+	
+	background-color:rgba(255,255,255,0.6);
+	/* opacity: 0.6; */
+	/* Donne de la transparence à tout le bloc ET aux éléments à l'intérieur */
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 1.6em;
+}
+

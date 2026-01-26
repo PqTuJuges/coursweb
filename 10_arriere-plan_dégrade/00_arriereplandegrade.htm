@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+<title>Arrière plan dégradé</title>
+<style  type="text/css">
+<!--
+.box {
+	width: 80%;
+    height: 100px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+.intro{	
+    background: linear-gradient(yellow,purple);
+
+}
+
+
+
+h2 {
+	margin-top: 0;
+	font-size: 1.6em;
+}
+
+
+.box01{
+	/* 	(La nouvelle syntaxe ne nécessite plus de préfixe)*/
+	
+	background:linear-gradient(to left top, red 0%, yellow 100%);
+	/*Dégradé se dirigeant vers le coin supérieur gauche - partant du rouge et terminant par du jaune */
+	
+	
+	
+	
+	
+	
+	/*Du rouge au violet... en passant par plein de couleurs */
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box02{
+	/*background:repeating-linear-gradient(180deg, blue 5% , red 10%);*/
+	
+	/*background:repeating-linear-gradient(90deg, blue 5%, red 10%);*/
+
+	background:repeating-linear-gradient(-45deg, red, red 5px, white 5px, white 10px);
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+.box03{
+	
+	background:radial-gradient(red, yellow, cyan);*/
+	
+	
+/*Ici, nous spécifierons des emplacements spécifiques pour les arrêts de couleurs :*/
+/*background: radial-gradient(red 5%, yellow 25%, cyan 50%);*/
+
+
+
+background: radial-gradient(circle, red 5%, yellow 25%, cyan 50%);
+}
+
+
+
+
+
+.box04{
+	background: repeating-radial-gradient(black, black 5px, white 5px, white 10px);
+}
+
+
+
+
+
+
+
+.box05 {
+	background: #fcecfc; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #fcecfc 0%, #fba6e1 40%, #fd89d7 54%, #ff7cd8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #fcecfc 0%,#fba6e1 40%,#fd89d7 54%,#ff7cd8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #fcecfc 0%,#fba6e1 40%,#fd89d7 54%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+		
+	color: white;
+	font-weight:bolder;
+	border:1px solid #ff7cd8;
+	padding: 100px 20px;
+	
+	width:760px;
+	margin:10px auto;
+	
+}
+
+
+.texteavecdegrade{
+-webkit-background-clip:text;
+ /* Applique l'arrière-plan au texte !! préfixes obligatoires pour SAFARI */
+
+ -webkit-text-fill-color: transparent;
+/*définit la couleur utilisée pour dessiner le contenu des lettres qui forment un texte 
+ATTENTION ! Non accessible !!
+
+*/
+background-image:linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+
+}
+
+
+
+
+
+
+-->
+</style>
+</head>
+<body>
+
+<div class="box intro">
+<h2>Propriété: linear-gradient</h2>
+
+</div>
+
+
+
+
+
+<div class="box01">
+<h2>Propriété: linear-gradient</h2>
+<p>La fonction <strong>linear-gradient </strong>permet de créer un dégradé linéaire. Elle prend 3 valeurs, dont 2 sont obligatoires : direction du dégradé (optionnel), couleur de départ, couleur de fin. </p>
+<p>La direction du dégradé par défaut est to bottom dans la nouvelle syntaxe (C’est vers où le dégradé va). Dans l’ancienne syntaxe, la direction par défaut était top (C’est d’où le dégradé part).</p>
+<p>Exemple pour un dégradé rouge/bleu du haut vers le bas : 
+background: linear-gradient( red, blue); </p>
+Dégradé rouge/bleu de la droite vers la gauche, nouvelle syntaxe : background: linear-gradient( to left, red, blue);
+<br>
+Dégradé rouge/bleu de la droite vers la gauche, ancienne syntaxe :
+background: linear-gradient( right, red, blue);
+</div>
+
+
+<div class="box02">
+<h2>Propriété: repeating-linear-gradient</h2>
+<p>La fonction CSS repeating-linear-gradient créé une image composée de dégradés qui se répètent. </p>
+<p>Cela fonctionne de manière similaire aux dégradés linéaires simples décrits les mêmes arguments que les dégradés linéaires basiques représentés avec linear-gradient mais les points d'arrêt des couleurs sont automatiquement répétés, indéfiniment, dans les deux directions (les points d'arrêt sont répétés d'autant que la distance qui sépare le premier et le dernier point d'arrêt).</p>
+</div>
+
+
+
+<div class="box03">
+<h2>Propriété: radial-gradient</h2>
+<p>La fonction <strong>radial-gradient </strong>permet de créer un dégradé radial.</p> 
+<p>(50% 50%) correspondent à la position en x et en y des cercles vert et bleu. <br>
+Le troisième et le quatrième paramètre correspond à la forme du dégradé (ellipse ou circle), et à la taille de celui-ci (closest-side, closest-corner, farthest-side, farthest-corner, contain, cover). <br>
+Les trois derniers paramètres sont les couleurs du grand cercle vert, puis du petit cercle bleu, suivi de l’étendue du dégradé en pourcentage.</p>
+</div>
+
+<div class="box04">
+<h2>Propriété: repeating-radial-gradient</h2>
+<p>La fonction <strong>radial-gradient </strong>permet de créer un dégradé radial.</p> 
+<p>(50% 50%) correspondent à la position en x et en y des cercles vert et bleu. <br>
+Le troisième et le quatrième paramètre correspond à la forme du dégradé (ellipse ou circle), et à la taille de celui-ci (closest-side, closest-corner, farthest-side, farthest-corner, contain, cover). <br>
+Les trois derniers paramètres sont les couleurs du grand cercle vert, puis du petit cercle bleu, suivi de l’étendue du dégradé en pourcentage.</p>
+</div>
+
+
+<div class="box box05">
+
+
+<p>Générateurs de dégradés</p>
+<p>
+<a href="http://www.colorzilla.com/gradient-editor/">http://www.colorzilla.com/gradient-editor/</a>
+</p>
+
+<h1 class="texteavecdegrade">Mon titre avec dégradé </h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
