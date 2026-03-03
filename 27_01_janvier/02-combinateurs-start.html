@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<title> Les combinateurs</title>
+<style>
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:0.9em;
+	margin:4em;
+}
+h1 
+{
+	font-size: 2.2em; 
+	color:#63100F;
+}
+h2 
+{
+	font-size:1.8em; 
+	color:#C82605;
+}
+h3
+{
+	font-size:1.2em; 
+	color:#FFA420;
+	border-bottom-style:solid;
+	border-color:#FFA420;
+	border-width:1px;
+}
+#menu01  li a{
+	background-color: red;
+}
+#menu01  ul  li  a{
+	background-color: yellow;
+}
+h3 + p{
+	background-color: #C82605;
+}
+h3 ~ p{
+	background-color: aqua;
+}
+#menu02 li:hover~li{
+	background-color: lightgreen;
+}
+#menu03 ul:has(li:hover){
+	background-color: aquamarine;
+}
+
+</style>
+
+</head>
+<body>
+<div id="intro">
+<h1>Les combinateurs</h1>
+<p>
+Les combinateurs permettent d’agir sur un élément en fonction de sa <strong>relation avec un autre.</strong></p>
+<div>
+<p>
+Nous connaissons déjà :<br>
+h1 em {<br>
+	font-size:2em;<br>
+}<br>
+Qui ciblera tous les éléments "em" contenus dans l’élément "h1".
+ </p>
+ </div>
+<p>
+D’autres combinateurs plus avancés permettent de ne désigner que le premier enfant d’un élément, ne pointer que des éléments directement adjacents à un autre, …   </p>
+<p>
+</div>
+
+<div id="selecteurs-famille">
+<h2>Sélecteur d’enfants et sélecteur de frère adjacent</h2> 
+
+
+<h3>Sélecteur d’enfants</h3>
+
+<!-- 
+1. Grâce au sélecteur d'enfant, ajoutez une puce image aux menus principaux uniquement (et pas aux sous-menus)
+2. Comment cibler tous les premiers niveaux de div de mon document  ? 
+-->
+
+<ul id="menu01">
+<li><a href="#">premier lien du menu</a></li>
+<li><a href="#">deuxième lien du menu</a></li>
+	<ul>
+	<li><a href="#">sous-lien du menu</a></li>
+	<li><a href="#">sous-lien du menu</a></li>
+	<li><a href="#">sous-lien du menu</a></li>
+	</ul>
+<li><a href="#">troisième lien du menu</a></li>
+</ul>
+
+<!-- 
+1. Grâce au sélecteur de frêre adjacent, ciblez le p qui est placé directement à la suite du h3
+ -->
+<h3> Sélecteur de frère adjacent  </h3>
+<p>
+Le sélecteur de frère adjacent (le signe « + » indique un sélecteur adjacent) permet de cibler un élément précédé par un autre élément qui possède le même parent.
+</p>
+<p>
+Nous l'utilisons ici pour mettre en forme le premier paragraphe après un titre et éviter d’utiliser des classes superflues.
+</p>
+<p>
+Comme le sélecteur d'enfant, celui-ci est pris en charge par Internet Explorer 7 et ses versions ultérieures s’il n’y a pas de commentaires  entre les éléments ciblés.
+</p>
+
+<!-- 
+2. Grâce au sélecteur de frêre adjacent indirect, ciblez les p frêres du h3
+ -->
+<h3> Sélecteur de frère adjacent  indirect </h3>
+
+<p> Sélecteur CSS3 utilisant le caractère ~, il permet d'appliquer des styles d’un seul coup à tous les frères d’un élément ciblé répondant à un sélecteur précis.</p>
+
+<p>Il est important de noter que ce sélecteur ne cible que les frères suivants d’un élément ciblé, en aucun cas les frères précédents ne seront concernés.</p>
+
+	<div id="section">
+	<p> Ce paragraphe ne devra pas être concerné par le sélecteur de frère adjacent  indirect </p>
+	</div>
+
+	<!-- 
+3. Grâce au sélecteur de frêre adjacent indirect, ciblez les li qui ne sont pas survolés
+ -->
+
+ 
+<ul id="menu02">
+<li><a href="#">premier lien du menu</a></li>
+<li><a href="#">deuxième lien du menu</a></li>
+<li><a href="#">troisième lien du menu</a></li>
+<li><a href="#">quatrième lien du menu</a></li>
+</ul>
+</div>
+
+<div id="selecteurs-parents">
+<h2> Le sélecteur de parents</h2>
+
+<!-- 
+4. Grâce au sélecteur de parent (CSS4) on pourrait cibler l'élément ul lorsque le li est survolé 
+-->
+
+<ul id="menu03">
+<li><a href="#">premier lien du menu</a></li>
+<li><a href="#">deuxième lien du menu</a></li>
+<li><a href="#" class="pageactive">troisième lien du menu</a></li>
+<li><a href="#">quatrième lien du menu</a></li>
+</ul>
+
+<!-- 
+5. ou cibler le li dont le fils « a » possède la classe active
+
+-->
+</div>
+
+</body>
+</html>

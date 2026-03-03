@@ -1,0 +1,7 @@
+- Améliorer le code HTML existant : sémantique - accessibilité
+- largeur de site adaptative MAIS au maximum de 1000px
+- les sections atteintes par le menu seront marquées graphiquement (bordure, sous-titre (h2) d'une autre couleur, … ou tout autre formatage au choix)
+- une section sur 2 est grisée pour marquer la structure du site
+- Effet lettrine sur la 1ère lettre des sous-titres (h2)
+- Automatisez l'ajout de l'astérisque sur les labels des éléments obligatoires du formulaire
+- Marquez les éléments invalides du formulaires par une bordure

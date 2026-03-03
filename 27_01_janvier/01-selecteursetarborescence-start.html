@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+<title> Les sélecteurs et l'arborescence - ciblage des sélecteurs</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<style>
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:0.9em;
+	margin:4em;
+}
+h1,h2,h3{
+	color: red;
+}
+div#intro, section{
+	border: 1px solid black;
+	padding: 2em;
+}
+div#exercices section article p {
+	color: green;
+}
+div#exercices section article p strong {
+	color: yellow;
+}
+section article span.terme{
+	color: aqua;
+}
+#menu a{
+	color: palegoldenrod;
+}
+</style>
+</head>
+<body>
+<div id="intro">
+<p>
+Les différents éléments composant un fichier HTML (titres, paragraphes, listes, liens, images…) s’organisent sous la forme d’un « arbre généalogique », que l’on nomme également <strong>« arbre du document » (ou DOM pour Document Object Model)</strong>. </p>
+<p>
+Au chargement de la page HTML, la navigateur construit un modèle arborescent correspondant à l'ensemble des balises de la page web appelé le DOM.  Il charge ensuite la ou les feuilles de styles puis applique les différentes règles aux objets du DOM au fur et à mesure de la lecture des styles.  </p>
+<p>
+Il est possible de pointer (cibler) certains éléments en fonction de leur situation dans le document (degrés de parenté).  </p>
+<p>
+Selon la structure du document et principalement son arborescence (c’est-à-dire la hiérarchie des blocs, chacun étant placé « sous » l’éventuel bloc qui le contient), il est possible de pointer directement certains éléments en fonction de leur situation dans le document. Cette technique porte le nom de <strong>« sélection hiérarchique »</strong>. 
+</p>
+</div>
+
+<div id="exercices">
+<h1>Les sélecteurs et l'arborescence </h1>
+<h2>1. Ciblage des sélecteurs</h2>
+<!-- 
+A. Appliquez les styles nécessaires pour formater body, h1, h2 et h3
+B. Regroupez vos sélecteurs afin de formater le div intro et la section 
+--> 
+
+
+
+
+
+<h2>2. Cibler les descendants - limiter à certaines classes ou id</h2>
+
+<!-- 
+A. Formatez uniquement le(s) p de l'article
+B. Formatez uniquement les strong (enfants) du p de l'article
+C. Ciblez uniquement les classes ".terme" contenues dans des span
+D. Ciblez uniquement dans l'article, les éléments strong, descendants de blockquote et contenant la class "et01-part02" 
+-->
+
+<section>
+  <article>
+	<p>
+	Les différents éléments composant un fichier HTML (titres, paragraphes, listes, liens, images…) s’organisent sous la forme d’un <strong>« arbre généalogique »</strong>, que l’on nomme également <strong>« arbre du document » </strong>(ou DOM pour Document Object Model). 
+	</p>
+	<blockquote class="et01-part02">
+	Il est possible <span class="terme">de pointer (cibler) </span>certains éléments en fonction de leur situation dans le document (degrés de parenté).  
+	Selon la structure du document et principalement son arborescence (c’est-à-dire la hiérarchie des blocs, chacun étant placé « sous » l’éventuel bloc qui le contient),<strong> il est possible de pointer directement certains éléments en fonction de leur situation dans le document</strong>. Cette technique porte le nom de « sélection hiérarchique ». 
+	 </blockquote> 
+	 <blockquote>
+	Les sélecteurs descendants permettent de cibler les descendants d’un élément ou d’un groupe d’éléments  donnés.  <strong> Ils  sont  indiqués  par  un  espace  entre  deux  autres  sélecteurs</strong>.
+	 </blockquote> 
+  </article>
+
+
+<h2 class="terme">2. Simplifier grâce à la hiérarchie</h2>
+
+<!-- 
+A. Ciblez les liens de ce menu, sans ajouter de classe et sans affecter les autres menus éventuels de la page  
+-->
+<nav>
+	<ul id="menu">
+	<li><a href="#">premier lien du menu</a></li>
+	<li><a href="#">deuxième lien du menu</a></li>
+	<li><a href="#">troisième lien du menu</a></li>
+	</ul>
+</nav>
+</section>
+</div> <!-- Fin du div exercices -->
+</body>
+</html>
