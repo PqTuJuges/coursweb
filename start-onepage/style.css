@@ -1,3 +1,4 @@
+/*Pas oublier que quand je passe le curseur sur les diff liens du href doit etre en vert et aussi que partie conditions vente et nos produits doit avoir arriere plan en gris */
 /* RESET */
 body {
     margin: 0;
@@ -92,7 +93,7 @@ tfoot {
     background-color: #eee;
     font-weight: bold;
 }
-
+/* pour tableau revoir le css des exo d'avant comme ça c comment avant car chatgpt a faire dla merde jdois changer */
 /* BOUTON */
 button {
     display: block;
