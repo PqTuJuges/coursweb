@@ -1,0 +1,28 @@
+dl {
+    width: 90%;
+    margin: 20px auto;
+}
+
+dt {
+    float: left;
+    width: 30%;
+    font-family: 'cursive', sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+}
+dd {
+    margin-left: 35%;
+    padding: 20px 0;
+    border-top: 1px dotted #ccc;/* La petite ligne pointillée au-dessus */
+    text-align: justify;
+}
+
+/* Petite astuce : pour la première ligne, on ne veut pas de bordure */
+dt:first-of-type,
+dt:first-of-type+dd {
+    border-top: none;
+}
+
+dt {
+    clear: left;
+}

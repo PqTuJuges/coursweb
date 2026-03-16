@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px;
+    border-bottom: 2px solid black;
+}
+
+li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    background-color: white;
+
+    position: relative; 
+    top: -5px; /* L'onglet est "levé" de 5px par défaut */
+}
+
+a:hover {
+    background-color: white;
+    
+    /* IL DESCEND : On change la valeur de top */
+    top: 2px; /* Il descend de sa position d'origine vers le bas */
+}

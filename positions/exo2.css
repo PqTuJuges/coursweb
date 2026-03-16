@@ -1,0 +1,111 @@
+.titre {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 80px;
+    margin-bottom: 60px;
+}
+
+
+.phrase {
+    display: flex;
+    align-items: baseline;
+    font-family: Arial, sans-serif;
+}
+
+.c-rouge {
+    color: red;
+    font-size: 120px;
+    font-family: serif;
+}
+
+
+.e-vert {
+    background-color: green;
+    color: white;
+    font-size: 40px;
+    padding: 5px 10px;
+    font-style: italic;
+
+    position: relative;
+    top: -40px;
+    /* On le fait monter */
+}
+
+
+.s-jaune {
+    background-color: yellow;
+    color: blue;
+    font-size: 40px;
+    padding: 0 5px;
+
+    position: relative;
+    top: -35px;
+    /* On le fait monter aussi */
+    left: -5px;
+    /* On le rapproche un peu du e */
+}
+
+
+.t-italique {
+    font-size: 100px;
+    font-family: serif;
+    font-style: italic;
+
+    position: relative;
+    top: 10px;
+    /* Il descend un peu */
+}
+
+
+.a-bloc {
+    background-color: #333;
+    color: #999;
+    font-size: 110px;
+    padding: 20px 15px;
+    margin: 0 15px;
+}
+
+
+.m-rose {
+    color: #ff99ff;
+    font-size: 90px;
+    font-family: "Comic Sans MS", cursive;
+}
+
+
+.u-rouge {
+    color: red;
+    font-size: 60px;
+    font-weight: bold;
+
+    position: relative;
+    top: -45px;
+    /* Il monte assez haut */
+}
+
+
+.s-gros {
+    font-size: 90px;
+    font-family: serif;
+
+    position: relative;
+    top: -60px;
+    /* Très haut */
+}
+
+
+.a-noir {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.n-orange {
+    color: orange;
+    font-size: 50px;
+
+    position: relative;
+    top: -40px;
+}
+
+.t-petit {
+    font-size: 25px;
+}
