@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            overflow: auto; /* conteneur qui englobe le float */
+            margin-bottom: 2rem;
+        }
+
+        .float-left {
+            float: left;
+            margin: 0 1rem 1rem 0;
+            width: 200px;
+        }
+
+        .float-right{
+            float: right;
+        }
+        
+        .float-right + h1 {
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="card">
+        <img class="float-left" src="images/zen01.jpg" alt="zen01">
+        <h1>Titre</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aperiam amet expedita facilis commodi
+            quisquam corrupti sequi enim dicta numquam, ipsa provident excepturi, placeat labore sapiente incidunt nihil
+            consectetur asperiores!</p>
+    </section>
+
+    <section class="card">
+        <img class="float-right" src="images/zen02.jpg" alt="zen02">
+        <h1>Titre</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aperiam amet expedita facilis commodi
+            quisquam corrupti sequi enim dicta numquam, ipsa provident excepturi, placeat labore sapiente incidunt nihil
+            consectetur asperiores!</p>
+    </section>
+
+    <section class="card">
+        <img class="float-left" src="images/zen03.jpg" alt="zen03">
+        <h1>Titre</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aperiam amet expedita facilis commodi
+            quisquam corrupti sequi enim dicta numquam, ipsa provident excepturi, placeat labore sapiente incidunt nihil
+            consectetur asperiores!</p>
+    </section>
+
+    <section class="card">
+        <img class="float-right" src="images/zen04.jpg" alt="zen04">
+        <h1>Titre</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aperiam amet expedita facilis commodi
+            quisquam corrupti sequi enim dicta numquam, ipsa provident excepturi, placeat labore sapiente incidunt nihil
+            consectetur asperiores!</p>
+    </section>
+</body>
+
+</html>
