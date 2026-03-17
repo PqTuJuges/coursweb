@@ -4,25 +4,16 @@ dl {
 }
 
 dt {
-    float: left;
+    font-size: 1.5em;
     width: 30%;
-    font-family: 'cursive', sans-serif;
-    font-weight: bold;
-    padding-top: 20px;
+    padding-top: 10px;
+    vertical-align: top;
 }
 dd {
-    margin-left: 35%;
+    width: 55%;
+}
+dt,dd{
+    display: inline-block;
     padding: 20px 0;
-    border-top: 1px dotted #ccc;/* La petite ligne pointillée au-dessus */
-    text-align: justify;
-}
-
-/* Petite astuce : pour la première ligne, on ne veut pas de bordure */
-dt:first-of-type,
-dt:first-of-type+dd {
-    border-top: none;
-}
-
-dt {
-    clear: left;
+    border-top: 1px dotted gray;
 }
