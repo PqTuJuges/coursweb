@@ -1,0 +1,5 @@
+section main {
+  grid-template-columns: 1fr;
+  padding: 3%;
+  gap: 3%;
+}

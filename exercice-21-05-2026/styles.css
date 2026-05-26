@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Satisfy");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+
+section {
+  font-size: 0.9rem;
+}
+
+section header {
+  font-family: "Satisfy", cursive;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: #646464;
+  color: #646464;
+  padding: 1.5%;
+  margin: 1%;
+  text-align: center;
+}
+
+section main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section article {
+  box-sizing: border-box;
+  /*
+	OBLIGATOIRE sinon le recalcul des boîtes génère un débordement
+	*/
+  border-style: dotted;
+  border-width: 1px;
+  padding: 0.5%;
+  margin: 1.85%;
+
+  flex-basis: 20%;
+}
+
+section article figure {
+  text-align: center;
+}
+
+section article img {
+  box-shadow: 1px 1px 5px #999;
+  padding: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+section article p {
+  padding: 0;
+  margin: 0;
+}
+section article:nth-child(1) p {
+  border-color: Fuchsia;
+  color: Fuchsia;
+}
+
+section article:nth-child(2) p {
+  border-color: blue;
+  color: blue;
+}
+
+section article:nth-child(3) p {
+  border-color: green;
+  color: green;
+}
+
+section article:nth-child(4) p {
+  border-color: orange;
+  color: orange;
+}
+section article footer {
+  font-family: "Satisfy", cursive;
+  font-size: 0.8em;
+  font-weight: bolder;
+  border: none;
+}
+
+section footer {
+  font-family: "Satisfy", cursive;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: #646464;
+  color: #646464;
+  padding: 1.5%;
+  margin: 1%;
+  text-align: center;
+}
+
+section main {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section article {
+  flex-basis: 45%;
+}

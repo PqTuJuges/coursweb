@@ -1,0 +1,16 @@
+body{
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows:
+    100px
+    auto
+    1fr
+    60px;
+
+    grid-template-areas:
+    "header"
+    "sidebar"
+    "main"
+    "footer";
+}

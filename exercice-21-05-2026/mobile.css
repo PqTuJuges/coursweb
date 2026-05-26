@@ -1,0 +1,13 @@
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: stretch;
+  padding: 8px;
+  gap: 8px;
+}
+
+nav a {
+  font-size: 1rem;
+  padding: 16px 20px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,13 @@
+nav {
+  display: grid;                        
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-around;
+  padding: 8px 12px;
+  gap: 20px;
+}
+
+nav a {
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}

@@ -1,0 +1,8 @@
+section main {
+    flex-direction: column;
+    align-items: center;
+  }
+  section article {
+    flex-basis: 60%;
+    width: 60%;
+  }
