@@ -1,0 +1,11 @@
+main
+{
+	width: 100vw;
+	font-size: 5vw;
+}
+
+.col-12, .col-8, .col-6, .col-4, .col-3, .col-2
+{
+	grid-template-columns : 1fr;
+}
+

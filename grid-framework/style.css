@@ -1,0 +1,89 @@
+body {
+	background-color: goldenrod;
+	font-size: 2vw;
+}
+
+main {
+	width: 80vw;
+	margin: 0 auto;
+
+}
+
+.col-12,
+.col-8,
+.col-6,
+.col-4,
+.col-3,
+.col-2,
+.col-1 {
+	display: grid;
+}
+
+article {
+	border: 1px solid black;
+	text-align: center;
+	margin: 0.2em;
+}
+
+
+
+.col-12 {
+	grid-template-columns: repeat(12, 1fr);
+	;
+}
+
+.col-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.col-6 {
+	grid-template-columns: repeat(6, 1fr);
+	;
+}
+
+.col-4 {
+	grid-template-columns: repeat(4, 1fr);
+	;
+}
+
+.col-3 {
+	grid-template-columns: repeat(3, 1fr);
+	;
+}
+
+.col-2 {
+	grid-template-columns: repeat(2, 1fr);
+	;
+}
+
+.col-1 {
+	grid-template-columns: 1fr;
+}
+
+.col-12 article {
+	background-color: blueviolet;
+}
+
+.col-8 article {
+	background-color: burlywood;
+}
+
+.col-6 article {
+	background-color: red;
+}
+
+.col-4 article {
+	background-color: yellow;
+}
+
+.col-3 article {
+	background-color: lawngreen;
+}
+
+.col-2 article {
+	background-color: coral;
+}
+
+.col-1 article {
+	background-color: gray;
+}

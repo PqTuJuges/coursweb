@@ -1,0 +1,36 @@
+main
+{
+	width: 100vw;
+	font-size: 3vw;
+}
+
+.col-12{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.col-8{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.col-6{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr;    
+}
+
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
