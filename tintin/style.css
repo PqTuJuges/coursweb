@@ -1,0 +1,52 @@
+/* Le conteneur doit être en position relative pour servir de repère à la fusée */
+.espace {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+    /* Cache la fusée une fois qu'elle dépasse du cadre */
+    border: 2px solid #333;
+}
+
+/* Étape 1 : Superposition des images */
+.fond,
+.fusee {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centre horizontalement les images */
+}
+
+.fond {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* Derrière */
+}
+
+.fusee {
+    width: 80px;
+    /* Ajuste la taille de ta fusée */
+    z-index: 2;
+    /* Devant le fond */
+
+    /* Étape 2 : L'animation de décollage */
+    /* Nom de l'animation | Durée | Reste à sa position finale | Attend 1s avant de partir */
+    animation: decollage 3s forwards ease-in 1s;
+}
+
+/* Étape 3 : Définition du mouvement de vol */
+@keyframes decollage {
+    0% {
+        bottom: 0;
+        /* Position de départ (au sol) */
+    }
+
+    100% {
+        bottom: 120%;
+        /* S'envole complètement hors de l'écran */
+    }
+}

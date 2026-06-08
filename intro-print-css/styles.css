@@ -1,0 +1,121 @@
+body
+		{
+			margin: 10px 0 ;
+			padding: 0 ;
+			font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+			background: #dea ;
+		}
+		
+		div#conteneur
+		{
+			width:90%; 
+			max-width: 1000px ;
+			margin: 0 auto ;
+			border: 2px solid #ab4 ;
+			background: #fff ;
+		}
+		
+		header
+		{
+			height: 250px ;
+			margin: 0 ;
+			background: url(apple.jpg) no-repeat left top,
+			url(title.gif) right 2em center no-repeat ;
+		}
+		
+		header h1 {
+			margin:0;
+			text-align:center;
+			color:#ab4;
+			padding-top:200px;
+		}
+		
+		ul#menu
+		{
+			margin:0;
+			height: 35px ;
+			background: url(bg_menu.gif) repeat-x 0 -25px ;
+			list-style-type: none ;
+			
+			display:flex;
+		}
+				
+		ul#menu li
+		{
+			width: 130px ;
+			line-height: 25px ;
+			border-right: 2px solid #dea ;
+			text-align: center ;
+		}
+		
+		ul#menu li a
+		{
+			
+			
+			font-size: 1.2em ;
+			font-weight: bold ;
+			letter-spacing: 2px ;
+			color: #fff ;
+			text-decoration: none ;
+			
+		}
+		
+		ul#menu li a:hover
+		{
+			background: url(bg_menu.gif) repeat-x 0 0 ;
+		}
+		
+		article
+		{
+			padding: 0 25px 0 100px ;
+			background: url(bg_page.gif) no-repeat 15px 15px ;
+		}
+		
+		article h2
+		{
+			padding-left: 25px ;
+			line-height: 25px ;
+			font-size: 1.4em ;
+			background: url(little_apple.gif) no-repeat left bottom ;
+			color: #9b2 ;
+			border-bottom: 1px solid #9b2 ;
+		}
+		
+		article h3
+		{
+			margin-left: 15px ;
+			padding-left: 5px ;
+			border-bottom: 1px solid #9b2 ;
+			border-left: 3px solid #9b2 ;
+			color: #9b2 ;
+		}
+		
+		article p
+		{
+			text-align: justify ;
+			text-indent: 2em ;
+			line-height: 1.7em ;
+		}
+		
+		article a
+		{
+			color: #8a0 ;
+		}
+		
+		article a:hover
+		{
+			color: #9b2 ;
+		}
+		
+		footer
+		{
+			margin: 0 ;
+			padding-right: 10px ;
+			line-height: 30px ;
+			text-align: right ;
+			color: #8a0 ;
+		}
+		
+	article.print{
+	display:none;
+}	

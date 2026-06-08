@@ -1,0 +1,38 @@
+body {
+	font-size:95% ;
+}
+
+
+#container {
+	width: 90vw;
+	max-width:1024px;
+	min-width:680px;
+	margin: 0 auto;
+	
+	/* Mise en place de la grille de mise en page générale
+ */
+    
+	grid-template-columns: repeat(4,1fr);
+		
+	grid-template-areas: 
+        "nav nav nav nav"
+        "header header header header"
+        "section01 section01 section02 section02" 
+		"section03 section03 aside aside "
+		 "footer footer footer footer ";
+}
+
+/* Gestion de la navigation 
+ */ 
+ 
+ 
+nav ul {
+	grid-template-columns: repeat(3,1fr);
+	
+}
+
+nav ul li {
+	border:1px solid rgb(204,204,191);
+	padding:0.5em;
+	margin:0;
+}

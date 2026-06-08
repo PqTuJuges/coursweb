@@ -1,0 +1,12 @@
+#test1 {
+    transform: rotateX(60deg);
+    transform: rotateY(45deg);
+}
+#test2{
+    transform: rotateX(5deg);
+    transform: rotate(25deg);
+}
+#test3{
+    transform : skew(30deg, 0deg);
+    transform : matrix(echelleX, 0, 0, echelleY, 0, 0);
+}

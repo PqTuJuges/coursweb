@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>CSS3 | Transformations</title>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+<!--
+
+/* GENERAL */
+
+body {
+	font: 100%/1.5 "Myriad Pro","Myriad Web","Lucida Grande","Trebuchet MS","Tahoma","Helvetica","Arial",sans-serif;
+	color: #434343;
+	margin-top: 1em;
+}
+
+.bloc{
+	width:150px;
+	height:150px;
+	background-color:#099;
+	margin:100px 0 0 100px;
+}
+
+
+
+
+/* --------------- ROTATION  --------------- */
+
+/* Exemple 01 */
+
+/* pour tourner les éléments de classe rotation de 45 degrés dans le sens des aiguilles d’une montre*/
+
+.rotation01 { 
+	transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* Exemple 02 */
+
+.rotation02{
+	text-align:center;
+	transform:rotate(25deg);
+}
+
+.rotation02 h2.title{
+ 
+	font-weight:bold;
+	font-size:1.5em;
+	line-height:50px;
+}
+
+.rotation02 h3.suffixe{
+	font-size:1em;
+	line-height:0px;
+	transform:rotate(90deg);
+}
+
+.rotation02 h4.fonction{
+	font-size:1em;
+	line-height:50px;
+	transform:rotate(180deg);
+}
+
+
+/* ------------------- scale --------------- */
+
+.scale01 {
+	transform:scale(1.5);
+}
+
+.scale02 {
+	transform: scale(0.5,1); 
+	/* Version raccourcie (x,y) */
+}
+
+.scale03 {
+    transform: scale(1,1.5); 
+}
+
+
+
+/* ------------------- Translate ---------------- */
+
+.translate01 { 
+    transform: translate(250px,50px); 
+	/*Si vous spécifiez deux valeurs, la première est le déplacement horizontal, la deuxième, le déplacement vertical*/
+}
+
+.translate02 { 
+	transform: translate(50px, 10px); 
+}
+
+
+
+/* ------------------------ Deformation ----------- */
+
+/* pour incliner un élément dans les 2 axes de 15 degrés*/
+.deformation01 { 
+	transform: skew(15deg,15deg); 
+}
+
+
+
+
+/* pour une déformation horizontale de 20 degrés et une déformation verticale de 45 degrés */
+.deformation02 { 
+    transform: skew(20deg,-45deg); 
+}
+
+
+
+
+/* --------------- POINT D'ORIGINE --------------- */
+
+/* L'origine par défaut pour la fonction rotate() est le centre de la rotation. */
+
+POUR COMPRENDRE : https://developer.mozilla.org/fr/docs/Web/CSS/transform-origin
+
+
+/* point d'origine initial */
+.pointorigine {
+	transform-origin: 0 0;
+    transform: rotate(90deg); 
+}
+
+.pointoriginemodifie { 
+    transform-origin: 50% 50% /*left top */;  
+    transform: rotate(90deg); 
+}
+
+.pointoriginemodifie02 { 
+    transform-origin: 50% 50% /*left top */;  
+    transform: scale(1.25); 
+}
+
+
+
+
+
+
+
+
+
+/* -------------------- PLUSIEURS TRANSFORMATIONS --------- */
+
+div.plsrstransformations {
+   /* width:30px;
+	height:30px;
+	background-color:red;
+	margin:100px 0 0 100px;
+	
+    transform-origin: 0 0;
+    transform: rotate(15deg) translateX(230px) scale(1.5, 2.6) skew(220deg,-150deg);*/
+}
+
+
+
+/* LA FONCTION MATRIX */
+
+
+
+
+
+
+
+
+-->
+</style>
+
+</head>
+
+<body>
+<h1>Les transformations </h1>
+<p>
+Les transformations permettent de modifier, avec des propriétés CSS, l’affichage d’éléments HTML d’une page.  Une fois affiché de manière « classique », un élément HTML pourra « subir » des transformations. 
+</p>
+<p>
+Pour effectuer une transformation, la propriété<strong> transform </strong>est employée. Cette propriété utilise ensuite des<strong> fonctions </strong>pour appliquer telle ou telle transformation.  
+</p>
+<ul>
+<li>Translation (translate)</li>
+<li>Mise à l'échelle (scale)</li>
+<li>Rotation (rotate)</li>
+<li>Inclinaison (skew)</li>
+</ul>
+
+<p> La syntaxe est simple d'emploi:
+<br>
+<strong>transform: function(value);</strong>
+</p>
+<p>
+Il est souvent nécessaire d'utiliser les préfixes vendeurs (-webkit-, -moz-, etc.) devant la propriété transform pour utiliser les transformations 2D sur les versions actuelles et passées de navigateurs. <br/>
+<a href="https://caniuse.com/#feat=transforms2d" target="_blank">caniuse</a>.
+</p>
+
+<!-- POINT ORIGINE -->
+<h2>Modifier le point d'origine</h2>
+
+<p>
+Par défaut, toutes les transformations ont comme point de référence le centre de l’élément. Ce point de référence sert de départ pour les calculs des transformations.  Ce point de référence peut être modifié avec la propriété <strong>transform-origin</strong>. La valeur spécifiée indique alors le point de référence.
+</p>
+
+<div class="bloc pointorigine">
+Point d'origine initial
+</div>
+
+
+<div class="bloc pointoriginemodifie">
+Point d'origine "left top"
+</div>
+
+
+<br> <br> <br><br> <br> <br>
+
+
+
+
+
+
+<!-- Rotation -->
+
+<h1>Rotation</h1>
+<p>
+<strong>transform: rotate(valeur);</strong> <br>
+La fonction <strong>rotate</strong> utilise des valeurs exprimées en degrés (deg) ou en radians (rad), elle permet de tourner les éléments.
+</p>
+<figure><img src="intro-images/rotate.PNG"></figure>
+
+<!-- Rotation - exemple 01 -->
+<div class="bloc rotation01">
+Ici un bloc en rotation de 45 degrés dans le sens des aiguilles d’une montre
+</div>
+
+<br><br>
+
+<!-- Rotation - exemple 02 -->
+<div class="bloc rotation02">
+	<h2 class="title">IFOSUP</h2>
+	<h3 class="suffixe">Wavre</h3>
+	<h4 class="fonction">Promotion Sociale</h4>
+</div>
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- Fonction de scale -->
+<h2>Fonction scale</h2>
+
+<p>
+<strong>transform: scale(valeur);</strong> <br>
+La fonction <strong>scale</strong> permet une mise à l’échelle d’un élément selon un ratio, sur une échelle de 0 à 1. <br>
+1 étant la taille initiale,  une valeur inférieure à 1 aura pour conséquence de réduire l’élément, un chiffre supérieur à 1 va l’agrandir.  <br>
+La place occupée dans le flux demeure identique : si l’élément est agrandi, ses frères ne seront pas poussés en conséquence.
+</p>
+<figure><img src="intro-images/scale.PNG"></figure>
+<p>
+<strong>transform: scale(valeurX,valeurY);</strong>
+</p>
+
+
+<div class="bloc">
+Bloc initial
+</div>
+
+
+<!-- Scale - exemple 01 -->
+<div class="bloc scale01">
+Bloc agrandit proportionnellement
+</div>
+
+<!-- Scale - exemple 02 -->
+<div class="bloc scale02">
+Bloc déformé horizontalement
+</div>
+
+<!-- scale - exemple 03 -->
+<div class="bloc scale03">
+Bloc déformé verticalement
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- TRANSLATE -->
+
+<h2>Fonction de déplacement</h2>
+<p>
+<strong>transform: translate(valeur);</strong>
+</p>
+<p>
+<strong>translate, translateX, translateY  (déplacement)</strong> <br>
+La fonction <strong>translate</strong> permet de réaliser un déplacement, sur une distance spécifiée, par rapport à sa position d’origine et selon le point de référence.   <br>
+Une translation sur l'axe X (valeurX) ou Y (valeurY) uniquement peut être opérée.
+</p>
+<figure><img src="intro-images/translate.PNG"></figure>
+<p>
+<strong>transform: translate(valeurX,valeurY);</strong>
+</p>
+
+<div class="bloc">
+Bloc initial
+</div>
+
+<!-- translate - exemple 01 -->
+<div class="bloc translate01">
+Bloc qui se déplace  
+</div>
+
+<!-- translate - exemple 02 -->
+<div class="bloc translate02">
+Déplacement horizontal 
+</div>
+
+
+
+<!-- DEFORMATION -->
+<h2>Fonction skew (de déformation) </h2>
+
+<p>
+<strong>transform: skew(valeur);</strong> <br>
+La fonction <strong>skew</strong> permet d’effectuer une déformation de l’élément sur les deux axes (d'obliquer la forme d'un élément).    <br>
+L’unité peut s’exprimer en degrés : deg ou en radians : rad.
+</p>
+<figure><img src="intro-images/skew.PNG"></figure>
+<p>
+<strong>transform: skew(valeurX,valeurY);</strong>
+</p>
+
+<div class="bloc">
+Bloc initial
+</div>
+
+
+<!-- deformation - exemple 01 -->
+<div class="bloc deformation01">
+pour incliner un élément dans les 2 axes de 15 degrés
+</div>
+
+
+<!-- deformation - exemple 02 -->
+<div class="bloc deformation02">
+pour une déformation horizontale de 20 degrés et une déformation verticale de 5 degrés 
+</div>
+
+<br><br><br><br><br><br>
+
+
+
+<!-- Appliquer toutes les transformations -->
+
+<h2>Appliquer toutes les transformations </h2>
+	
+<p>Il est également possible d'effectuer des transformations combinées en espaçant les fonctions d'un espace : <br>
+<strong>
+transform : function1(value1) function2(value2) function3(value3);
+</strong>
+<br>
+Exemple :<br>
+<strong>
+transform: skew(30deg,15deg) translate(10px,0px) rotate(-30deg);<br>
+<br>
+</p>
+
+<p>
+Cependant, l'ordre des fonctions a son importance.  En effet, les transformations se font dans l'ordre où elles sont déclarées, ainsi <strong>une translation de 20px est équivalente à 40px si un scale de 2 la précède</strong>. <br/>
+Attention donc à l'ordre de déclaration de ces fonctions.
+</p>
+
+<h2>Exemple de plusieurs transformations appliquées à un div</h2>
+
+<div class="plsrstransformations">Exemple d'une transformation avec beaucoup de fonctions </div>
+
+
+<h2>La fonction "absolue" matrix</h2>
+
+<p>
+Cette fonction permet de réunir en une seule déclaration toutes les fonctions précédentes que nous avons vu ensemble sous la forme d'une matrice. 
+</p>
+
+<p>
+Exemple :
+</p>
+
+<code>
+div {<br>
+    transform-origin: 0 0;<br>
+    transform: rotate(15deg) translateX(230px)  scale(1.5, 2.6) skew(220deg, -150deg) translateX(230px);<br>
+}
+</code>
+<p>
+Equivaut à :
+</p>
+<code>
+div {<br>
+    transform-origin: 0 0;<br>
+    transform: matrix(1.06, 1.84, 0.54, 2.8, 466px, 482px);<br>
+}
+</code>
+
+<p>
+Très concrètement, les détails ne seront pas abordés ici car ils font beaucoup plus appel à des notions mathématiques complexes que beaucoup d'entre nous ont mis de côté.
+</p>
+<p>
+Pour comprendre comment fonctionne cette fonction : <br>
+<a href="http://www.useragentman.com/blog/2011/01/07/css3-matrix-transform-for-the-mathematically-challenged/" target="_blank">The CSS3 matrix() Transform for the Mathematically Challenged.</a> 
+<br>
+Et sachez qu'il existe un éditeur en ligne qui vous permet de manipuler une boîte dans le but d'obtenir des coordonnées matricielles : <a href="http://www.useragentman.com/matrix/" target="_blank">www.useragentman.com/matrix/</a>
+</p>
+
+<br>
+<br>
+<br>
+
+
+<h1>Générateurs </h1>
+
+<a href="http://www.css3maker.com/css3-transform.html">http://www.css3maker.com/css3-transform.html</a><br>
+<a href="http://css3generator.com/"> http://css3generator.com/</a><br>
+<a href="http://www.westciv.com/tools/transforms/index.html"> http://www.westciv.com/tools/transforms/index.html</a><br>
+
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+</body>
+</html>

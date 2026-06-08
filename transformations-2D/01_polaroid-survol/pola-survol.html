@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>CSS3 | Déformations - Exercices</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+<!--
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+*{
+	font-family: 'Dancing Script', cursive;
+}
+
+h1{
+	font-size:1.5em;
+	text-align:center;
+	height:80px;
+	margin:3em;
+}
+
+article{
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content:center;
+	
+	
+	margin:0 auto;
+	list-style-type:none;
+	text-align:center;
+	}
+	
+figure{
+	margin:0;
+	padding:0;
+}	
+
+figure#img1,figure#img2,figure#img3{
+	position:relative;
+	width:320px;
+	height:320px;
+	background-color:#FFF;
+	padding:0px 5px 60px 5px ;
+	font-size:24px;
+	box-shadow:3px 3px 10px #999;
+
+	}
+	
+figure#img1{
+	transform:rotate(18deg);
+	}
+
+figure#img2{
+	transform:rotate(-18deg);
+	}
+figure#img3{
+	transform:rotate(18deg);
+	}
+
+figure span{
+	position :absolute;
+	left:-10000px;
+	
+	/*display:none;*/
+}	
+	
+figure:hover span{
+	left:0px;
+	bottom:5px;
+	/*display:block;*/
+	font-size:0.6em;
+}	
+	
+figure::before{ 
+  content:url(images/punaise.png);
+}
+
+
+
+
+figure#img1:hover,figure#img2:hover,figure#img3:hover {
+	transform:rotate(0deg) scale(1.5);
+	z-index:1000;
+	outline:1px solid black;
+	padding:0;
+	box-shadow:none;
+}
+figure:hover::before{
+	content:none;
+	/*display:none;*/
+}
+
+figure:hover figcaption{
+	display:none;
+}
+
+
+
+
+/*--------------------------------*/
+
+-->
+</style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+	<h1>Safran violet</h1>
+
+<article id="conteneur">
+
+    <figure id="img1"><img src="images/crocus-1.jpg" width="320" height="240" /><figcaption>Crocus 1</figcaption><span>Populatam in postulatus pileo in aperte operiebat caput duce qua ad quo qua ex cunctum incantato maiestatis cunctum cum ei quo ex ei ex artibus maiestatis populatam artibus cupiebat reus.</span></figure>
+    <figure id="img2"><img src="images/crocus-2.jpg" width="320" height="240" /><figcaption>Crocus 2</figcaption><span>Haec absumpta licet blanditiis maritus profecta accitus suspicionis eum metuens statione saepe ad quae cuius properaret Gallicanos absumpta appellatur se absumpta suam saepe quae saepe Caesar suspicionis suam quae profecta.</span></figure>
+    <figure id="img3"><img src="images/crocus-3.jpg" width="320" height="240" /><figcaption>Crocus 3</figcaption><span>Patruelis maiestatis remissurus Scutariorum quos poscebant remissurus opifex adulabili clemens laborum futurum Scudilo adulabili qui votis fessae persuasionis Scudilo vultu seriis socium et diu flagrantibus quos vultu per laborum callidus.</span></figure>
+</ul>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

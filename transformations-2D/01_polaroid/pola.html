@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>CSS3 | Déformations - Exercices</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+<!--
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+*{
+	font-family: "Dancing Script", cursive;
+}
+
+
+h1{
+	font-size:1.5em;
+	height:3em;
+	text-align:center;
+}
+
+article#conteneur{
+
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content:center;
+	margin:0 auto;
+	text-align:center;
+}
+
+figure#img1,figure#img2,figure#img3{
+	position:relative;
+	/* A titre de sécurité pour gérer l'ordre des couches */
+	width:320px;
+	height:360px;
+	background-color:#FFF;
+	padding:10px;
+	font-size:1.4em;
+	box-shadow:8px 8px 10px #999;
+	border:1px solid #999;
+	}
+	
+figure#img1{
+	transform:rotate(18deg);
+	z-index:2;
+	}
+
+figure#img2{
+	transform:rotate(-18deg);
+	z-index:3;
+	}
+figure#img3{
+	transform:rotate(18deg);
+	z-index:1;
+	}
+
+figure::before{ 
+  content:url(images/punaise.png);
+  
+  /* Si la punaise doit être déplacée, utiliser position:relative 
+  
+  Possibilité également de travailler avec background-image, positionnement de ce dernier avec background-position
+   
+  */
+}
+
+/*--------------------------------*/
+
+-->
+</style>
+</head>
+
+<body>
+	<h1>Safran violet</h1>
+	<article id="conteneur">
+
+    <figure id="img1"><img src="images/crocus-1.jpg" width="320" height="240" />
+		<figcaption>Crocus 1</figcaption>
+	</figure>
+    <figure id="img2"><img src="images/crocus-2.jpg" width="320" height="240" />
+		<figcaption>Crocus 2</figcaption>
+	</figure>
+    <figure id="img3"><img src="images/crocus-3.jpg" width="320" height="240" />
+		<figcaption>Crocus 3</figcaption>
+	</figure>
+	</article>
+</body>
+</html>
+
+
+
+
+
+

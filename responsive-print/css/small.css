@@ -1,0 +1,53 @@
+body {
+	font-size:90% ;
+}
+
+#container {
+	width: 90vw;
+	min-width:300px;
+	margin: 0 auto;
+	
+	/* Mise en place de la grille de mise en page générale
+ */
+	grid-template-columns: repeat(2,1fr);
+		
+	grid-template-areas: 
+        "nav nav"
+        "header header "
+        "section01 section01"
+		"section02 section02" 
+		"section03 section03"
+		"aside aside"
+		"footer footer";
+}
+
+/* Gestion de la navigation 
+ */ 
+ 
+nav ul {
+	list-style-type:none;
+	display:grid;
+	grid-template-columns: repeat(1,1fr);
+}
+
+nav ul li {
+	border:1px solid rgb(204,204,191);
+	padding:0.5em;
+	margin:0;
+}
+
+/* Gestion header / footer 
+ */ 
+ 
+header, footer {
+	grid-template-columns: 1fr;	
+
+} 
+ 
+footer figure {
+	order:1;
+/* 	Pour faire passer l'image après le texte
+ */} 
+ 
+ 
+ 
