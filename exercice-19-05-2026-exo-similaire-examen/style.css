@@ -1,0 +1,198 @@
+body {
+  font-size: 100%;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 1200px;
+  min-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Georgia, serif;
+}
+
+/* ── NAVIGATION ── */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  margin: 0 0 40px 0;
+  padding: 0;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+nav ul li {
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* ── SECTION HERO (dernière actualité) ── */
+#oui {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+#oui div {
+  flex: 2;
+}
+
+#oui h1 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#oui h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#oui p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+#oui figure {
+  flex: 1;
+  margin: 0;
+}
+
+#oui figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── SECTION ARTICLES ── */
+#articles {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+/* Deux articles côte à côte à gauche */
+#liste-articles {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+}
+
+#liste-articles article {
+  flex: 1;
+}
+
+#liste-articles article figure {
+  margin: 0 0 10px 0;
+  border: 1px solid #ddd;
+}
+
+#liste-articles article figure img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+#liste-articles article h3 {
+  font-size: 1rem;
+  margin: 8px 0 6px 0;
+}
+
+#liste-articles article p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Colonne rubrique à droite */
+#svp {
+  flex: 1;
+  border-left: none;
+}
+
+#svp > h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Petits articles dans la rubrique : image miniature + texte en ligne */
+#svp > article {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  align-items: flex-start;
+}
+
+#svp > article figure {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  overflow: hidden;
+}
+
+#svp > article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#svp > article p {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ── SECTION TEXTES ── */
+#textes {
+  margin-bottom: 40px;
+}
+
+#textes article {
+  margin-bottom: 16px;
+}
+
+#textes article h2 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+#textes article p {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── FOOTER ── */
+footer {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+footer figure {
+  flex-shrink: 0;
+  width: 240px;
+  margin: 0;
+}
+
+footer figure img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+footer p {
+  font-size: 0.88rem;
+  line-height: 1.5;
+}

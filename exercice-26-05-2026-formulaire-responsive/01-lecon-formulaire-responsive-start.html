@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leçon : Formulaire Responsive</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 2rem;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #005f99;
+    }
+
+    form {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .form-row .form-group {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    button {
+      background-color: #005f99;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background-color: #00416d;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>📄 Rendre un formulaire responsive avec CSS</h1>
+
+  <p>
+    Les formulaires doivent rester clairs et faciles à remplir, même sur petit écran. Voici comment structurer un formulaire qui s’adapte automatiquement grâce au CSS.
+  </p>
+
+  <h2>🎯 Exercice : Formulaire contact adaptatif</h2>
+
+  <form>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom">
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="exemple@mail.com">
+    </div>
+
+    <div class="form-group">
+      <label for="sujet">Sujet</label>
+      <select id="sujet" name="sujet">
+        <option value="">-- Choisir un sujet --</option>
+        <option value="info">Informations</option>
+        <option value="support">Support</option>
+        <option value="autre">Autre</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Votre message..."></textarea>
+    </div>
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <h2>🧠 Explications pédagogiques</h2>
+  <ul>
+    <li><strong>.form-row</strong> regroupe des champs côte-à-côte sur grand écran.</li>
+    <li>Avec <code>flex-wrap: wrap</code> et <code>min-width</code>, les champs passent en colonne sur mobile.</li>
+    <li>On utilise <code>label</code> + <code>for</code> pour l’accessibilité (navigation au clavier, lecteurs d’écran).</li>
+    <li>Le style responsive est contrôlé avec une simple règle <code>@media screen and (max-width: 600px)</code>.</li>
+  </ul>
+
+  <p>💡 Astuce : Utilise des unités relatives (%, rem) plutôt que px pour un design fluide.</p>
+
+</body>
+</html>

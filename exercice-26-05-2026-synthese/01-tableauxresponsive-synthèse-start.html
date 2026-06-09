@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableaux Responsives - Exemples</title>
+    <style>
+      @media screen and (max-width: 1000px) {
+        .table-scroll {
+          overflow-x: auto;
+          display: block;
+        }
+        .table-linear th {
+          display: none;
+        }
+        .table-linear tr {
+          display: table;
+          margin: 20px;
+        }
+        .table-linear td {
+          display: table-row;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .table-card td::before {
+          content: attr(data-label);
+        }
+        .table-card thead {
+          display: none;
+        }
+
+        .table-card tr {
+          display: block;
+          margin-bottom: 20px;
+        }
+        .table-card td {
+          display: flex;
+          justify-content: space-between;
+          border: none;
+        }
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 2rem;
+        background: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2 {
+        color: #005f99;
+      }
+
+      pre {
+        background: #eee;
+        padding: 1rem;
+        overflow-x: auto;
+        border-left: 4px solid #005f99;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 0.75rem;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📋 Leçon : Rendre un tableau responsive en CSS</h1>
+
+    <p>
+      Les tableaux sont pratiques sur desktop, mais illisibles sur mobile. Voici
+      deux méthodes pour les rendre lisibles sur petit écran sans JavaScript.
+    </p>
+
+    <h2>🔹 Méthode 1 : Scroll horizontal</h2>
+    <p>
+      On garde le tableau tel quel, mais on permet à l’utilisateur de faire
+      défiler horizontalement avec un <strong>overflow-x: auto</strong>.
+    </p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+            <th>Ville</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jean Dupont</td>
+            <td>34</td>
+            <td>Paris</td>
+            <td>jean@example.com</td>
+          </tr>
+          <tr>
+            <td>Claire Dubois</td>
+            <td>28</td>
+            <td>Lyon</td>
+            <td>claire@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <pre><code>&lt;div class="table-scroll"&gt;
+  &lt;table&gt;...&lt;/table&gt;
+&lt;/div&gt;
+
+.table-scroll {
+  overflow-x: auto;
+  display: block;
+}</code></pre>
+
+    <h2>🔹 Méthode 2 : linéarisation du tableau</h2>
+    <p>
+      Chaque ligne devient une table <code>tr {display: table;} </code> et
+      chaque cellule devient une ligne <code>td {display: table-row;} </code> .
+    </p>
+
+    <div class="table-linear">
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+            <th>Ville</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jean Dupont</td>
+            <td>34</td>
+            <td>Paris</td>
+            <td>jean@example.com</td>
+          </tr>
+          <tr>
+            <td>Claire Dubois</td>
+            <td>28</td>
+            <td>Lyon</td>
+            <td>claire@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>🔹 Méthode 3 : Transformation en carte (mobile-first)</h2>
+    <p>
+      Le tableau devient une série de "cartes" où chaque ligne est affichée en
+      bloc avec des étiquettes (attributs <code>data-label</code>).
+    </p>
+
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Poste</th>
+            <th>Département</th>
+            <th>Téléphone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Nom">Alice Martin</td>
+            <td data-label="Poste">Développeuse</td>
+            <td data-label="Département">Informatique</td>
+            <td data-label="Téléphone">01 23 45 67 89</td>
+          </tr>
+          <tr>
+            <td data-label="Nom">Marc Petit</td>
+            <td data-label="Poste">Designer</td>
+            <td data-label="Département">Création</td>
+            <td data-label="Téléphone">06 98 76 54 32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <pre><code>&lt;td data-label="Nom"&gt;Alice Martin&lt;/td&gt;
+
+@media screen and (max-width: 600px) {
+  .table-card td::before {
+    content: attr(data-label);
+  }
+}</code></pre>
+
+    <h2>✅ Conseils supplémentaires</h2>
+    <ul>
+      <li>
+        Utilisez <code>data-label</code> pour que l’utilisateur sache à quoi
+        correspond chaque cellule.
+      </li>
+      <li>Ne surchargez pas vos tableaux avec trop de colonnes.</li>
+      <li>Testez toujours sur différentes tailles d’écran.</li>
+    </ul>
+
+    <p>💡 Astuce : Vous pouvez combiner les deux méthodes selon les besoins.</p>
+  </body>
+</html>
